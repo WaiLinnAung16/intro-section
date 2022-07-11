@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="icon" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-white position-fixed w-100 top-0" id="header">
+    <div class="container mt-2 mt-xl-4">
+        <a class="navbar-brand" href="#">
+            <img src="./images/logo.svg" alt="logo" height="35">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list display-4"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto my-2 mb-lg-0 text-center ">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="featureDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Features
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="featureDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="companyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Company
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="companyDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Careers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">About</a>
+                </li>
+            </ul>
+            <div class="d-flex flex-column flex-lg-row">
+                <button class="btn btn-outline-primary me-0 me-lg-3 border-0">Login</button>
+                <button class="btn btn-outline-primary">Register</button>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container my-5">
+    <div class="row justify-content-center align-items-center min-vh-100">
+        <div class="col-lg-6 d-lg-none d-block">
+            <img src="./images/image-hero-mobile.png" alt="img" class="w-100">
+        </div>
+        <div class="col-xl-5 col-12">
+            <div class="text-center text-lg-start">
+                <h1 class="display-1 fw-bold mb-4">Make remote work</h1>
+                <p class="text-black-50 w-sm-75 mb-4 text-center text-lg-start">
+                    Get your team in sync, no matter your location. Streamline processes,
+                    create team rituals, and watch productivity soar.
+                </p>
+                <button class="btn btn-primary mb-5">Learn more</button>
+                <div class="row mt-lg-5 mt-2">
+                    <div class="col-lg-3 col-4">
+                        <img src="./images/client-audiophile.svg" alt="">
+                    </div>
+                    <div class="col-lg-3 col-4">
+                        <img src="./images/client-databiz.svg" alt="">
+                    </div>
+                    <div class="col-lg-3 col-4">
+                        <img src="./images/client-meet.svg" alt="">
+                    </div>
+                    <div class="col-lg-3 col-12 mt-4 mt-lg-0">
+                        <img src="./images/client-maker.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-xl-1"></div>
+        <div class="col-xl-5 col-12 d-lg-block d-none">
+            <img src="./images/image-hero-desktop.png" alt="img" class="w-100">
+        </div>
+    </div>
+</div>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
